@@ -1,15 +1,8 @@
 import React, { useState , useEffect } from "react";
 import "../folder_css/trademark.css";
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Link} from 'react-router-dom';
-import Home from "./home";
 
 function Category (){
 
@@ -19,8 +12,6 @@ function Category (){
     const { register, handleSubmit,} = useForm();
 //Khởi tạo useState cho danh sách danh mục
     const[list_category, setlist_category] = useState([]);
-//Khởi tạo Id để xóa danh mục
-    // const[delete_categorysp, setdelete_categorysp] = useState("");
 //code button thêm
     const onSubmit = data =>{ 
         console.log(data);
@@ -116,14 +107,12 @@ function Category (){
                           }
                           
                         }}>   Xóa    </button>
-
-                        <button className="magin_btn" onSubmit={Home}>
-                          Sửa
-                         
-                        </button>
                    
-                    <Link className=" mr-2" to={`/EditEmployee/editID/${item.id}`}>
+                    <Link className=" mr-2" to={`/editthuonghieu/${item.mathuonghieu}`}>
                        <i className="fa fa-edit" aria-hidden="true"></i> 
+                       <button>
+                          Sửa
+                        </button>   
                     </Link>
                   </td>
                   </tr>

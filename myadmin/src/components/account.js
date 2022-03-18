@@ -168,7 +168,7 @@ function Home (){
 
     return (
       <div>
-        <h1> Thêm Sản Phẩm </h1>
+        <h1> Thêm Tài Khoản --- Thông tin tài khoản --- admin-User </h1>
       </div>
     );
   

@@ -62,7 +62,7 @@ function Category (){
         {/* from thêm sản phẩm danh mục */}
           <div className="form_add_cate">
             <h4 className="Text_ThemDanhMuc">Thêm Danh Mục Sản Phẩm</h4>
-            <div className="form_nhap_thon_tin">
+            <div className="form_nhap_thon_tin_danh_muc">
               <form onSubmit={handleSubmit(onSubmit)} >
                 <input placeholder="Tên Danh Mục" {...register("name_category")} />
                 <select {...register("name_category_parent")}>

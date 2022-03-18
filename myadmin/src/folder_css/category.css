@@ -8,18 +8,24 @@
     color: white;
     text-align: center;
 }
-.form_nhap_thon_tin{
+/* .form_nhap_thon_tin{
     white-space: nowrap; 
-    width: 400px; 
+    width: 450px; 
     border: 1px solid #000000;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
-}
+} */
 .form_table{
     margin-top: 50px;
 }
 .magin_btn{
     margin-right: 20px;
+    margin-left: 20px;
+}
+.form_nhap_thon_tin_danh_muc{
+    width: 435px;
+    border: 1px solid #000000; 
+    text-align: center;
     margin-left: 20px;
 }

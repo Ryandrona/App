@@ -13,6 +13,10 @@ import Account from "../src/components/account"
 import Category from "./components/category";
 import Trademark from "../src/components/trademark"
 import EditCategory from "../src/components/edit/edit_category"
+import EditTrademark from "../src/components/edit/edit_trademark"
+import Editsanpham from "../src/components/edit/edit_home"
+import Image from "../src/components/image"
+import ListProduct from "../src/components/List/list_product"
 
 export default function BasicExample() {
  //let location = useLocation();
@@ -38,6 +42,9 @@ export default function BasicExample() {
        <li className="nav-item">
           <a className="nav-link text-white" href="/trademark">Trademark</a>
        </li>
+       <li className="nav-item">
+          <a className="nav-link text-white" href="/image">Image</a>
+       </li>
        
       </ul>
      </div>
@@ -59,12 +66,25 @@ export default function BasicExample() {
             <Category />
           </Route>
 
+          <Route path="/trademark">
+            <Trademark />
+          </Route>
+
+          <Route path="/image">
+            <Image />
+          </Route>
+
           <Route path={"/editdanhmucsanpham/:id"} children={<EditCategory />}>
           </Route>
 
+          <Route path={"/editthuonghieu/:id"} children={<EditTrademark/>}>
+          </Route>
 
-          <Route path="/trademark">
-            <Trademark />
+          <Route path={"/editsanpham/:id"} children={<Editsanpham/>}>
+          </Route>
+
+          <Route path={"/listsanpham"}>
+            <ListProduct />
           </Route>
 
           <Route path="/">
